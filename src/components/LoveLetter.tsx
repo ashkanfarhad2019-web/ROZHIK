@@ -11,7 +11,7 @@ export default function LoveLetter() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-[40px] p-8 md:p-20 shadow-2xl relative overflow-hidden"
+          className="bg-slate-900/60 backdrop-blur-2xl border border-white/10 rounded-[40px] p-8 md:p-20 shadow-[0_0_50px_rgba(244,63,94,0.1)] relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-8 opacity-5">
             <Mail size={160} className="text-rose-400" />
