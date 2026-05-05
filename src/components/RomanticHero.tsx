@@ -3,34 +3,34 @@ import { motion } from 'motion/react';
 
 export default function RomanticHero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-slate-950">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
         className="z-10"
       >
         <motion.span 
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-rose-600 font-medium tracking-widest uppercase text-sm mb-6 block"
+          className="text-rose-400 font-bold tracking-[0.3em] uppercase text-xs mb-8 block font-sans"
         >
-          بۆ جوانترین کچ لە جیهاندا
+          شازادە و فریشتەی ژیانم
         </motion.span>
         
-        <h1 className="text-6xl md:text-8xl font-serif text-slate-900 mb-8 leading-tight">
+        <h1 className="text-6xl md:text-9xl font-serif text-white mb-8 leading-tight">
           چەژنی لەدایکبوونت <br />
-          <span className="text-rose-500 italic">پیرۆز بێت!</span>
+          <span className="text-gradient">پیرۆز بێت!</span>
         </h1>
 
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="text-slate-600 text-lg max-w-xl mx-auto font-light leading-relaxed mb-10"
+          className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12 font-sans"
         >
-          هیوای ژیانێکی پڕ لە ئارامی و دڵخۆشیت بۆ دەخوازم. تۆ مانای دڵخۆشی منیت و هەمیشە وەک ئەستێرەیەک لە ژیانمدا دەدرەوشێیتەوە.
+          لە یادی لەدایکبوونتدا، هەموو جوانییەکانی جیهان بۆ تۆ دەخوازم. تۆ ئەو ڕووناکییەی کە شەوە تاریکەکانمی کردووە بە ڕۆژ.
         </motion.p>
 
         <motion.div
@@ -39,16 +39,16 @@ export default function RomanticHero() {
         >
           <a 
             href="#letter"
-            className="bg-rose-500 text-white px-8 py-4 rounded-full shadow-lg shadow-rose-200 hover:bg-rose-600 transition-colors inline-block font-medium"
+            className="bg-gradient-to-r from-rose-500 to-pink-600 text-white px-10 py-4 rounded-full shadow-2xl shadow-rose-900/40 hover:shadow-rose-500/50 transition-all inline-block font-bold text-lg"
           >
-            نوسراوە ئاشقانەکەم بخوێنەرەوە
+            نوسراوە ئاشقانەکەم
           </a>
         </motion.div>
       </motion.div>
 
-      {/* Decorative Blur Spheres */}
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-rose-200/40 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-pink-100/40 rounded-full blur-3xl -z-10" />
+      {/* Atmospheric Accents */}
+      <div className="absolute top-1/4 -left-40 w-[600px] h-[600px] bg-rose-900/20 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-1/4 -right-40 w-[600px] h-[600px] bg-purple-900/10 rounded-full blur-[120px] -z-10" />
     </section>
   );
 }
